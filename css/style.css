@@ -9,11 +9,20 @@ html, body {
 	font-family: monospace;
 }
 
+.parent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 .interface {
 	max-width: 480px;
-	border: 1px solid #00ff00;
-	margin: 2em auto;	
-	position: relative;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 h1 {
