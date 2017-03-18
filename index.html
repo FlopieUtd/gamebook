@@ -1,0 +1,54 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Gamebook</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="interface">
+			<div class="header">
+				<h1>STR12: AWAKENING</h1>
+			</div>
+			<div class="location">
+				<h2 class="currentLocation"></h2>
+			</div>			
+			<div class="story">
+				<p>You wake up on the floor of a dark, small room. The only light comes from a red light bulb above a steel door. It seems you have been imprisoned. You have no idea how you got here, but you do know you need to get back to your spaceship 'STR12' as soon as possible.</p>
+			</div>
+			<div class="user-options">
+				<p>It may be wise to <b>INSPECT</b> the room.</p>
+			</div>
+			<div class="user-choice">
+				<form action="/action_page.php">
+				  <input type="text" name="choice" class="choice" autofocus autocomplete="off">
+				  <input type="submit" value="go" id="go">
+				</form>
+			</div>
+			<div class="bottom">
+				<ul class="info stats description">
+					<li>Health: </li>
+					<li>Strength: </li>
+					<li>Intelligence: </li>
+				</ul>
+				<ul class="info stats value">
+					<li class="health"></li>
+					<li class="strength"></li>
+					<li class="intelligence"></li>
+				</ul>
+				<ul class="info equipment description">
+					<li>Equipment[0]:</li>
+					<li>Equipment[1]:</li>
+					<li>Equipment[2]:</li>
+				</ul>	
+				<ul class="info equipment value">
+					<li class="equipment1"></li>
+					<li class="equipment2"></li>
+					<li class="equipment3"></li>
+				</ul>			
+			</div>
+			
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
